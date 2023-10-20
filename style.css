@@ -179,3 +179,31 @@ body{
 
     
 }
+
+/* Main styles started */
+main{
+    display: flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.main-inner{
+    width: 90%;
+    margin-top: 0.8rem;
+
+}
+
+.main-nav-links a{
+    text-decoration: none;
+    color: var(--color-new-text);
+    padding-left: 0.8rem;
+}
+
+
+
+
+
+/* main-nav-links */
+
+
+/* Main styles ended */
