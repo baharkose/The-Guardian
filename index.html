@@ -3,104 +3,185 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAACJVgD/iVYA/4lWAP+JVgD/iVYA//b29v/29vb/9vb2//b29v/29vb/9vb2/4lWAP+JVgD/iVYA/4lWAP+JVgD/iVYA/4lWAP+JVgD/9vb2//b29v/29vb/iVYA/4lWAP+JVgD/iVYA//b29v/29vb/9vb2/4lWAP+JVgD/iVYA/4lWAP+JVgD/9vb2//b29v/29vb/iVYA/4lWAP+JVgD/iVYA/4lWAP+JVgD/9vb2//b29v/29vb/iVYA/4lWAP+JVgD/iVYA/4lWAP/29vb/9vb2/7GRYf+JVgD/iVYA/4lWAP+JVgD/iVYA//b29v/29vb/9vb2/4pWAP+JVgD/iVYA/4lWAP+JVgD/iVYA//z+/v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v+JVgD/iVYA/4lWAP+JVgD/iVYA/5NmKv/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/iVYA/4lWAP+JVgD/iVYA/4lWAP/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/iVYA/4lWAP+JVgD/iVYA/4lWAP+JVgD/9/f4//b29v/29vb/iVYA/4lWAP+JVgD/iVYA/4lWAP+JVgD/iVYA/4lWAP+JVgD/iVYA/4lWAP+JVgD/iVYA/4lWAP/29vb/9vb2/4lWAP+JVgD/iVYA/4lWAP+JVgD/iVYA/4lWAP+JVgD/iVYA/4lWAP+JVgD/iVYA/4lWAP+JVgD/hU8A//b29v/29vb/9vb2//b29v/29vb/9vb2/4hUAP+JVgD/iVYA/4lWAP+JVgD/ilcA/4lWAP+JVgD/iVYA//b29v/29vb/9vb2/4lWAP+JVgD/9vb2//b29v/29vb/iVYA/4lWAP+JVgD/iVYA/4lWAP+JVgD/iVYA//b29v/29vb/9vb2//n5+f+JVgD/iVYA//b29v/29vb/9vb2//b29v+JVgD/iVYA/4lWAP+JVgD/ilcA/4lWAP/29vb/9vb2//b29v/m39b/iVYA/4lWAP/5+fn/9vb2//b29v/29vb/iVYA/4tXAPaJVgD/iVYA/4lWAP+JVgD/9vb2//b29v/29vb/9vb3/4lWAP+JVgD/9vb2//b29v/29vb/+Pj2/4lWAP+JVgD/iVYA/4lWAP+JVgD/iVYA/4pXAP/29vb/9vb2//b29v+JVgD/iVYA//b29v/29vb/9vb2/4pWAP2JVgD/iVYA/4lWAP+JVgD/iVYA/4lWAP+JVgD/iVYA//b29v/29vb/9vb2//b29v/29vb/+Pj4+4lWAP+JVgD/iVYA/4lWAP+JVgD/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==" rel="icon" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
+    <link
+      href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAACJVgD/iVYA/4lWAP+JVgD/iVYA//b29v/29vb/9vb2//b29v/29vb/9vb2/4lWAP+JVgD/iVYA/4lWAP+JVgD/iVYA/4lWAP+JVgD/9vb2//b29v/29vb/iVYA/4lWAP+JVgD/iVYA//b29v/29vb/9vb2/4lWAP+JVgD/iVYA/4lWAP+JVgD/9vb2//b29v/29vb/iVYA/4lWAP+JVgD/iVYA/4lWAP+JVgD/9vb2//b29v/29vb/iVYA/4lWAP+JVgD/iVYA/4lWAP/29vb/9vb2/7GRYf+JVgD/iVYA/4lWAP+JVgD/iVYA//b29v/29vb/9vb2/4pWAP+JVgD/iVYA/4lWAP+JVgD/iVYA//z+/v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v+JVgD/iVYA/4lWAP+JVgD/iVYA/5NmKv/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/iVYA/4lWAP+JVgD/iVYA/4lWAP/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/iVYA/4lWAP+JVgD/iVYA/4lWAP+JVgD/9/f4//b29v/29vb/iVYA/4lWAP+JVgD/iVYA/4lWAP+JVgD/iVYA/4lWAP+JVgD/iVYA/4lWAP+JVgD/iVYA/4lWAP/29vb/9vb2/4lWAP+JVgD/iVYA/4lWAP+JVgD/iVYA/4lWAP+JVgD/iVYA/4lWAP+JVgD/iVYA/4lWAP+JVgD/hU8A//b29v/29vb/9vb2//b29v/29vb/9vb2/4hUAP+JVgD/iVYA/4lWAP+JVgD/ilcA/4lWAP+JVgD/iVYA//b29v/29vb/9vb2/4lWAP+JVgD/9vb2//b29v/29vb/iVYA/4lWAP+JVgD/iVYA/4lWAP+JVgD/iVYA//b29v/29vb/9vb2//n5+f+JVgD/iVYA//b29v/29vb/9vb2//b29v+JVgD/iVYA/4lWAP+JVgD/ilcA/4lWAP/29vb/9vb2//b29v/m39b/iVYA/4lWAP/5+fn/9vb2//b29v/29vb/iVYA/4tXAPaJVgD/iVYA/4lWAP+JVgD/9vb2//b29v/29vb/9vb3/4lWAP+JVgD/9vb2//b29v/29vb/+Pj2/4lWAP+JVgD/iVYA/4lWAP+JVgD/iVYA/4pXAP/29vb/9vb2//b29v+JVgD/iVYA//b29v/29vb/9vb2/4pWAP2JVgD/iVYA/4lWAP+JVgD/iVYA/4lWAP+JVgD/iVYA//b29v/29vb/9vb2//b29v/29vb/+Pj4+4lWAP+JVgD/iVYA/4lWAP+JVgD/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=="
+      rel="icon"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>News, sport and opinion from the Guardian</title>
   </head>
   <body>
     <div class="container">
-
-        <!-- header started -->
-      <header>
-        <nav class="nav top-nav">
-          <a href=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="icon icon-banner">
-            <path fill-rule="evenodd" d="M4.125 3C3.089 3 2.25 3.84 2.25 4.875V18a3 3 0 003 3h15a3 3 0 01-3-3V4.875C17.25 3.839 16.41 3 15.375 3H4.125zM12 9.75a.75.75 0 000 1.5h1.5a.75.75 0 000-1.5H12zm-.75-2.25a.75.75 0 01.75-.75h1.5a.75.75 0 010 1.5H12a.75.75 0 01-.75-.75zM6 12.75a.75.75 0 000 1.5h7.5a.75.75 0 000-1.5H6zm-.75 3.75a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5H6a.75.75 0 01-.75-.75zM6 6.75a.75.75 0 00-.75.75v3c0 .414.336.75.75.75h3a.75.75 0 00.75-.75v-3A.75.75 0 009 6.75H6z" clip-rule="evenodd" />
-            <path d="M18.75 6.75h1.875c.621 0 1.125.504 1.125 1.125V18a1.5 1.5 0 01-3 0V6.75z" />
-          </svg>
-          Print subscriptions</a>
-          <a href=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="icon icon-print">
-            <path fill-rule="evenodd" d="M18.685 19.097A9.723 9.723 0 0021.75 12c0-5.385-4.365-9.75-9.75-9.75S2.25 6.615 2.25 12a9.723 9.723 0 003.065 7.097A9.716 9.716 0 0012 21.75a9.716 9.716 0 006.685-2.653zm-12.54-1.285A7.486 7.486 0 0112 15a7.486 7.486 0 015.855 2.812A8.224 8.224 0 0112 20.25a8.224 8.224 0 01-5.855-2.438zM15.75 9a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" clip-rule="evenodd" />
-          </svg>
-          Sign in</a>
-          <a href=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="icon icon-sign">
-            <path fill-rule="evenodd" d="M10.5 3.75a6.75 6.75 0 100 13.5 6.75 6.75 0 000-13.5zM2.25 10.5a8.25 8.25 0 1114.59 5.28l4.69 4.69a.75.75 0 11-1.06 1.06l-4.69-4.69A8.25 8.25 0 012.25 10.5z" clip-rule="evenodd" />
-          </svg>
-          Search</a>
-          <a href="">Europe edition<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="icon icon-down-arrow">
-            <path fill-rule="evenodd" d="M12.53 16.28a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 14.69l6.97-6.97a.75.75 0 111.06 1.06l-7.5 7.5z" clip-rule="evenodd" />
-          </svg>
-          </a>
-          <a href=""></a>
-        </nav>
-        <div class="banner">
-            <div class="banner-left">
-                <div class="support">Support us <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="icon icon-left-arrow">
-                    <path fill-rule="evenodd" d="M3.75 12a.75.75 0 01.75-.75h13.19l-5.47-5.47a.75.75 0 011.06-1.06l6.75 6.75a.75.75 0 010 1.06l-6.75 6.75a.75.75 0 11-1.06-1.06l5.47-5.47H4.5a.75.75 0 01-.75-.75z" clip-rule="evenodd" />
-                  </svg>
-                  </div>
-                <div class="fund"></div>
-                <div class="support-btn"></div>
-            </div>
-            <div class="banner-right">
-                <img src="./assets/svg/the-guardian-new-2018.svg" alt="">
-            </div>
+      <!-- header started -->
+      <header>   
+        <div class="top-nav-outer">
+            <nav class="nav top-nav">
+        
+          <div class="header-top-nav-item">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="icon icon-print"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M4.125 3C3.089 3 2.25 3.84 2.25 4.875V18a3 3 0 003 3h15a3 3 0 01-3-3V4.875C17.25 3.839 16.41 3 15.375 3H4.125zM12 9.75a.75.75 0 000 1.5h1.5a.75.75 0 000-1.5H12zm-.75-2.25a.75.75 0 01.75-.75h1.5a.75.75 0 010 1.5H12a.75.75 0 01-.75-.75zM6 12.75a.75.75 0 000 1.5h7.5a.75.75 0 000-1.5H6zm-.75 3.75a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5H6a.75.75 0 01-.75-.75zM6 6.75a.75.75 0 00-.75.75v3c0 .414.336.75.75.75h3a.75.75 0 00.75-.75v-3A.75.75 0 009 6.75H6z"
+                clip-rule="evenodd"
+              />
+              <path
+                d="M18.75 6.75h1.875c.621 0 1.125.504 1.125 1.125V18a1.5 1.5 0 01-3 0V6.75z"
+              />
+            </svg>
+            <a href=""> Print subscriptions</a>
+          </div>
+          <div class="header-top-nav-item">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="icon icon-sign"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M18.685 19.097A9.723 9.723 0 0021.75 12c0-5.385-4.365-9.75-9.75-9.75S2.25 6.615 2.25 12a9.723 9.723 0 003.065 7.097A9.716 9.716 0 0012 21.75a9.716 9.716 0 006.685-2.653zm-12.54-1.285A7.486 7.486 0 0112 15a7.486 7.486 0 015.855 2.812A8.224 8.224 0 0112 20.25a8.224 8.224 0 01-5.855-2.438zM15.75 9a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z"
+                clip-rule="evenodd"
+              />
+            </svg>
+            <a href="" class="visible-link"> Sign in</a>
+          </div>
+          <div class="header-top-nav-item">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="icon icon-search"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M10.5 3.75a6.75 6.75 0 100 13.5 6.75 6.75 0 000-13.5zM2.25 10.5a8.25 8.25 0 1114.59 5.28l4.69 4.69a.75.75 0 11-1.06 1.06l-4.69-4.69A8.25 8.25 0 012.25 10.5z"
+                clip-rule="evenodd"
+              />
+            </svg>
+            <a href=""> Search</a>
+          </div>
+          <div class="header-top-nav-item">
+            <a href="">Europe edition </a>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="icon icon-down-arrow"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M12.53 16.28a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 14.69l6.97-6.97a.75.75 0 111.06 1.06l-7.5 7.5z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </div>
+            </nav>
         </div>
-        <div class="bottom-nav">
-            <a href="#">News</a>
-            <a href="#">Opinion</a>
-            <a href="#">Sport</a>
-            <a href="#">Culture</a>
-            <a href="#">Lifestyle</a>
-            <a href="#">More<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="icon icon-more">
-                <path fill-rule="evenodd" d="M12.53 16.28a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 14.69l6.97-6.97a.75.75 0 111.06 1.06l-7.5 7.5z" clip-rule="evenodd" />
+        <div class="banner">
+          <div class="banner-left">
+            <div class="support">
+              Support us
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                class="icon icon-left-arrow"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M3.75 12a.75.75 0 01.75-.75h13.19l-5.47-5.47a.75.75 0 011.06-1.06l6.75 6.75a.75.75 0 010 1.06l-6.75 6.75a.75.75 0 11-1.06-1.06l5.47-5.47H4.5a.75.75 0 01-.75-.75z"
+                  clip-rule="evenodd"
+                />
               </svg>
-              </a>
+            </div>
+            <div class="fund"></div>
+            <div class="support-btn"></div>
+          </div>
+          <div class="banner-right">
+            <img src="./assets/svg/the-guardian-new-2018.svg" alt="" />
+          </div>
+        </div>
+    </div>
+        <div class="bottom-nav">
+          <a href="#">News</a>
+          <a href="#">Opinion</a>
+          <a href="#">Sport</a>
+          <a href="#">Culture</a>
+          <a href="#">Lifestyle</a>
+          <a href="#"
+            >More<svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="icon icon-more"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M12.53 16.28a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 14.69l6.97-6.97a.75.75 0 111.06 1.06l-7.5 7.5z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </a>
         </div>
       </header>
 
       <!-- header ended -->
-<!-- main started -->
+      <!-- main started -->
       <main>
         <nav class="main-nav-links">
-            <a href="#">World</a>
-            <a href="#">UK</a>
-            <a href="#">Climate crisis</a>
-            <a href="#">Environment</a>
-            <a href="#">Science</a>
-            <a href="#">Global development</a>
-            <a href="#">Football</a>
-            <a href="#">Teach</a>
-            <a href="#">Business</a>
-            <a href="#">Obituaries</a>
+          <a href="#">World</a>
+          <a href="#">UK</a>
+          <a href="#">Climate crisis</a>
+          <a href="#">Environment</a>
+          <a href="#">Science</a>
+          <a href="#">Global development</a>
+          <a href="#">Football</a>
+          <a href="#">Teach</a>
+          <a href="#">Business</a>
+          <a href="#">Obituaries</a>
         </nav>
         <section class="main-news-topic">
-            <div class="news-title"></div>
-            <div class="news-photos">
-                <div class="sub-news"></div>
-            </div>
-            <div class="bottom-news">
-                <a class="bottom-new">
-                    <img class="bottom-new-img" alt="">
-                    <div class="bottom-new-title">A smart investment</div>
-                    <div class="bottom-new-content">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</div>
-                </a>
-                <a class="bottom-new">
-                    <img class="bottom-new-img" alt="">
-                    <div class="bottom-new-title">Al-Ahli Arap hospital blast</div>
-                    <div class="bottom-new-content">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
-                </a>
-                <a class="bottom-new">
-                    <img class="bottom-new-img" alt="">
-                    <div class="bottom-new-title">Gaza</div>
-                    <div class="bottom-new-content">Lorem ipsum dolor sit amet consectetur adipisicing.</div>
-                </a>
-                <a class="bottom-new">
-                    <img class="bottom-new-img" alt="">
-                    <div class="bottom-new-title">Analysis</div>
-                    <div class="bottom-new-content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam!</div>
-                </a>
-            </div>
-
+          <div class="news-title"></div>
+          <div class="news-photos">
+            <div class="sub-news"></div>
+          </div>
+          <div class="bottom-news">
+            <a class="bottom-new">
+              <img class="bottom-new-img" alt="" />
+              <div class="bottom-new-title">A smart investment</div>
+              <div class="bottom-new-content">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              </div>
+            </a>
+            <a class="bottom-new">
+              <img class="bottom-new-img" alt="" />
+              <div class="bottom-new-title">Al-Ahli Arap hospital blast</div>
+              <div class="bottom-new-content">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              </div>
+            </a>
+            <a class="bottom-new">
+              <img class="bottom-new-img" alt="" />
+              <div class="bottom-new-title">Gaza</div>
+              <div class="bottom-new-content">
+                Lorem ipsum dolor sit amet consectetur adipisicing.
+              </div>
+            </a>
+            <a class="bottom-new">
+              <img class="bottom-new-img" alt="" />
+              <div class="bottom-new-title">Analysis</div>
+              <div class="bottom-new-content">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Aliquam!
+              </div>
+            </a>
+          </div>
         </section>
       </main>
 

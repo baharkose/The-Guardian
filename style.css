@@ -13,6 +13,9 @@
     bottom: 0;
     box-sizing: border-box;
 }
+header{
+    margin: 0 auto;
+}
 
 .icon{
     width: 24px;
@@ -21,5 +24,57 @@
 
 body{
     font-family: "Helvetica Neue",Helvetica, sans-serif;
+}
+
+
+.top-nav-outer{
+      background-color: var(--bg-top-nav);
+    width: 100%;
+}
+.top-nav{
+    color: white;
+    display: flex;
+    flex-direction: row;
+
+    justify-content: flex-end;
+    padding-bottom: 5px;
+    padding-left: 0.5rem;
+    gap: 8px;
+    width: 90%;
+    /* background-color: #0d80a3f6; */
+}
+
+.header-top-nav-item{
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+    margin-top:0.3rem;
+}
+
+.top-nav a{
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    display: inline-block;
+}
+
+
+@media screen and (max-width:968px){
+    .top-nav a,
+    .top-nav svg
+    {
+        display: none;    
+    }
+    .top-nav{
+        justify-content: flex-start;
+        
+    }
+    .top-nav a.visible-link,
+    .top-nav .icon-sign
+    {
+        font-weight: 300;
+        display: inline-block;
+    }
 }
 
