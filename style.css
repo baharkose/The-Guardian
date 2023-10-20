@@ -6,6 +6,7 @@
     --bg-top-nav : #041F4A;
     --bg-nav: #052962;
     --bg-main: #F1F8FC;
+    --bg-news: #EDEDED;
     --color-important: #FFE500;
     --color-title:  #C70000;
     --color-new-text: #041F4A;
@@ -39,6 +40,10 @@ body{
     font-family: "Helvetica Neue",Helvetica, sans-serif;
     background-color: var(--bg-main);
     color: var(--color-new-text);
+}
+
+.container{
+    margin-bottom: 2rem;
 }
 
 /* TOP NAV */
@@ -196,6 +201,7 @@ main{
     display: flex;
     align-items:center;
     justify-content:center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .main-inner{
@@ -238,8 +244,20 @@ main{
 }
 
 .little-news{
+
     width: 100%;
-    background-color: #fff;
+    padding-bottom:16rem;
+    border-top: 2px solid #c700009c;
+    background-color: var(--bg-news);
+    font-weight: bold;
+    
+
+}
+
+.little-news h3,
+.bottom-new-title{
+    color:var(--color-title);
+    line-height: 1.4;
 }
 
 
@@ -247,7 +265,7 @@ main{
     height: 10rem;
     grid-area: 3/2/4/3;
     z-index: 999;
-} 
+ } 
 
 .new2{
     grid-area: 3/3/4/4;
