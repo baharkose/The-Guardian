@@ -103,7 +103,7 @@ body{
     justify-content: center;
     color: white;
     padding-top: 0.5rem;
-    padding-bottom: 2rem;
+    /* padding-bottom: 2rem; */
     font-family: Helvetica, sans-serif;
 }
 
