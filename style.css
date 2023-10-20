@@ -1,3 +1,13 @@
+:root{
+    /* COLORS */
+    --bg-top-nav : #041F4A;
+    --bg-nav: #052962;
+    --bg-main: #F1F8FC;
+    --color-important: #FFE500;
+    --color-title:  #C70000;
+    --color-new-text: #041F4A;
+}
+
 *{
     margin: 0;
     bottom: 0;
@@ -8,3 +18,8 @@
     width: 24px;
     height: 24px;
 }
+
+body{
+    font-family: "Helvetica Neue",Helvetica, sans-serif;
+}
+
