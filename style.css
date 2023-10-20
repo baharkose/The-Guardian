@@ -1,3 +1,6 @@
+
+/* COMMON STYLES */
+
 :root{
     /* COLORS */
     --bg-top-nav : #041F4A;
@@ -24,8 +27,11 @@ header{
 
 body{
     font-family: "Helvetica Neue",Helvetica, sans-serif;
+    background-color: var(--bg-main);
+    color: var(--color-new-text);
 }
 
+/* TOP NAV */
 
 .top-nav-outer{
       background-color: var(--bg-top-nav);
@@ -78,3 +84,63 @@ body{
     }
 }
 
+/* TOP NAV ENDED */
+
+/* BANNER STARTED */
+.banner{
+    background-color: var(--bg-nav);
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding-top: 0.5rem;
+    padding-bottom: 2rem;
+    font-family: Helvetica, sans-serif;
+}
+
+.banner-outer{
+    width: 90%;
+    display: flex;
+    justify-content:space-between;
+ 
+    /* background-color: yellow; */
+}
+
+.banner-right{
+    /* background-color: yellow; */
+    padding-top: 1rem;
+}
+
+.banner h3{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 800;
+    line-height: 2;
+    color: var(--color-important);
+}
+
+.banner p{
+    line-height: 2.1;
+}
+
+.banner-logo{
+    width: 224px;
+    /* height: 272px; */
+    filter: brightness(0) invert(1);
+}
+
+.support{
+    background-color: var(--color-important);
+    color: var(--color-new-text);
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding:0.4rem 0.8rem;
+    border: none;
+    outline: none;
+    border-radius:1.5rem;
+    
+
+
+}
+
+/* BANNER ENDED */
