@@ -144,3 +144,38 @@ body{
 }
 
 /* BANNER ENDED */
+
+/* bottom nav started */ 
+.bottom-nav{
+    background-color: var(--bg-nav);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bottom-nav-inner{
+    width: 90%;
+    border-top: 0.1px solid rgba(255, 255, 255, 0.212);
+    border-left: 0.1px solid rgba(255, 255, 255, 0.205);
+    border-right: 0.1px solid rgba(255, 255, 255, 0.171);
+    padding-bottom: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-basis: auto;
+
+}
+
+.bottom-nav-links a{
+    color: white;
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    padding-left:1rem;
+    display: inline-block;
+    border-left: 0.1px solid rgba(255, 255, 255, 0.123);
+    padding-bottom: 0.8rem;
+    padding-right: 1rem;
+
+    
+}
